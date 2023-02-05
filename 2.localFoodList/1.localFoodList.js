@@ -54,8 +54,10 @@ const localFoodList = [
 const menuList = document.querySelector('#container');
 
 localFoodList.forEach((menu) => {
-  menuList.innerHTML += `<div class='menu-box'>
+  menuList.innerHTML += `
+  <div class='menu-box'>
   <h3>${menu.name}</h3>
   <p>지역: ${menu.local}</p>
-  </div>`;
+  </div>
+  `;
 });
